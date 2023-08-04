@@ -1,0 +1,106 @@
+/* Variables */
+:root {
+  --primary-color: #007bff;
+  --border-radius: 5px;
+}
+
+/* Basic styling for the component */
+.component {
+  max-width: 700px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: var(--border-radius);
+  background-color: #f9f9f9;
+  font-family: "Titillium Web", sans-serif;
+}
+
+/* Logo styling */
+.logo-container {
+  text-align: center;
+}
+
+.logo-image {
+  max-width: 350px; /* Adjust the size as needed */
+}
+
+/* Content styling */
+.content {
+  text-align: center;
+}
+
+/* Dropzone styling */
+.dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  border: 2px dashed #ddd;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.dropzone:hover {
+  border-color: var(--primary-color);
+}
+
+.dropzone p {
+  margin: 7px 0;
+}
+
+/* Limit styling */
+.limit {
+  font-size: small;
+  padding-top: 0;
+}
+
+/* Selected file name styling */
+.selected-file-name {
+  margin: 10px 0;
+}
+
+/* Checkbox styling */
+.checkbox-container {
+  margin-top: 15px;
+}
+
+.checkbox-input {
+  display: none;
+}
+
+.checkbox-label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+.checkbox-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius);
+}
+
+.checkbox-input:checked + .checkbox-label::before {
+  background-color: var(--primary-color);
+}
+
+/* Custom checkmark */
+.checkbox-label::after {
+  content: "\2713";
+  position: absolute;
+  left: 4px;
+  top: -1px;
+  font-size: 16px;
+  color: #fff;
+  display: none;
+}
+
+.checkbox-input:checked + .checkbox-label::after {
+  display: block;
+}

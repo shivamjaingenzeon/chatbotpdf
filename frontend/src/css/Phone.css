@@ -1,0 +1,7 @@
+/* CSS to position the chat container on the phone image */
+
+/* Add any additional styling you need for your chat component */
+
+.paper::-webkit-scrollbar {
+  display: none;
+}

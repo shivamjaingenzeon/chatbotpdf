@@ -1,0 +1,91 @@
+/* Styling for h2 with moving gradient */
+.aboutustitle {
+  font-size: 3rem; /* Increase font size for a more prominent heading */
+  margin-bottom: 1rem;
+  background-image: linear-gradient(to right, #2779ff, #53b4ff);
+  background-clip: text;
+  color: transparent;
+  animation: moveGradient 2s linear infinite;
+  border-radius: 15px; /* Slow down the animation for a smoother effect */
+}
+
+/* Styling for the container */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  animation: fadeIn 1.8s ease-in-out; /* Slightly longer duration for the fadeIn animation */
+}
+
+/* Additional styles for the page content */
+.para1 {
+  font-size: 1.2rem; /* Slightly larger font size for better readability */
+  line-height: 1.8; /* Increase line height for better spacing */
+}
+
+.employee-card {
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  background-image: linear-gradient(to right, #4287f5, #33a5ff);
+  background-clip: text;
+  color: transparent;
+}
+
+.container_a {
+  align-items: center;
+}
+
+.employee-card img {
+  height: 40px;
+  margin-left: 1rem;
+}
+
+/* Justify between the content inside the cards */
+.employee-card div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Media queries for responsive layout */
+@media (max-width: 960px) {
+  .employee-card img {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Keyframe animations */
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

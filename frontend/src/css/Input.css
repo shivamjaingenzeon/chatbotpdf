@@ -1,0 +1,29 @@
+.input {
+  height: 30px;
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.chat-input {
+  width: 90%;
+  border: none;
+  outline: none;
+  color: #2f2d52;
+  font-size: 15px;
+  font-family: "Titillium Web";
+}
+.send {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chat-button {
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  background-color: #1976d2;
+  cursor: pointer;
+}
